@@ -1,0 +1,67 @@
+#section-2 {
+    background-image: url(http://assets.bintangpages.my.id/background.jpg);
+    /* background-color: #aeaeae; */
+    background-size: cover;
+  }
+  
+  .parent-section-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1700px;
+  }
+  
+  .parent-section-2 h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  .parent-section-2 ul {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    list-style: none;
+  }
+  
+  figure {
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    height: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #7FE9DE;
+    max-width: 500px;
+  }
+  
+  figure img {
+    margin-bottom: -4px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  figcaption {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.875rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  figcaption a {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color1);
+  }

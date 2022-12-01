@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPass</title>
+    <link rel="stylesheet" href="./css/mainstyle.css" />
+    <link rel="icon" type="image/x-icon" href="http://assets.bintangpages.my.id/logopw2.png">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <a href="/" class="logo">
+          <img src="assets/logopw2.png" />
+          <h1>MyPass</h1>
+        </a>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="help.html">TUTORIAL</a></li>
+          <li><a href="#section-3">ABOUT</a></li>
+          <li><a href="help.html">HELP</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- SECTION 1 - open -->
+      <section id="section-1">
+        <div class="parent-section-1">
+          <div class="container-section-1">
+            <img src="./assets/screen1.png"/>
+          </div>
+          <div class="container-section-1">
+            <h1>Buat Disini Sekarang!</h1>
+            <a href="PWGenerator/PWGenerator.html">
+              <div class="get-code">
+                <img src="assets/logopw2.png" />
+                <p>Password</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 2 - SlideShow -->
+      <section id="section-2">
+        <div class="parent-section-2">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="http://assets.bintangpages.my.id/gifpw4.gif" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 3 - Pengenalan Password -->
+      <section id="section-3">
+        <div class="first-slide">
+          <h1>Apakah Password yang aman itu?</h1>
+          <div class="first-slide-content">
+            <video id="bg-vidio" controls="true" width="100%">
+              <source src="assets/videopw.mp4" type="video/mp4" />
+            </video>
+            <p class="description-pw">
+              Password yang aman adalah password yang sulit/tidak dapat Anda tebak atau dipecahkan menggunakan brute force attack (tindakan hackers yang berupaya mengakses sistem atau jaringan secara paksa dengan cara menebak username dan password). 
+              Hacker menggunakan komputer untuk mencoba berbagai kombinasi huruf, angka, dan simbol untuk mencari password yang tepat.
+              Dengan demikian, password yang kuat terdiri dari kombinasi huruf besar dan huruf kecil, angka dan simbol khusus, seperti tanda baca. Panjangnya setidaknya harus 12 karakter, meskipun kami merekomendasikan untuk memilih karakter yang lebih panjang lagi
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-parent">
+        <div class="cover-footer-content">
+          <div class="footer-content">
+            <h1>MyPass</h1>
+            <br />
+            <p>
+              MyPass adalah salah satu situs website untuk merandom password 12 character 
+              dengan kombinasi huruf besar dan huruf kecil, angka dan simbol khusus.
+              Kami menawarkan MyPass untuk pengguna agar password yang dimiliki adalah
+              password yang aman. Website ini dibuat untuk membantu pengguna agar dengan 
+              mudah merandom password yang aman.
+            </p>
+          </div>
+          <div class="footer-content">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="#">Pelanggan</a></li>
+              <li><a href="#container-step">Langkah pembuatan</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+          <div class="footer-content">
+            <h3>Learn More</h3>
+            <ul>
+              <li><a href="#">Blog saya</a></li>
+              <li><a href="#">Syarat & Ketentuan</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+              <li><a href="#">Berita</a></li>
+            </ul>
+          </div>
+          <div class="footer-content">
+            <h3>Contact us</h3>
+            <ul>
+              <li><a href="mailto:bintangrassya2002@gmail.com">Email</a></li>
+              <li>
+                <a href="https://www.instagram.com/bintangrassya_/">Instagram</a>
+              </li>
+              <li><a href="https://github.com/bintangrassya">Github</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">&copy; Copyright by bintangrassya</p>
+    </footer>
+    <!-- make floating button -->
+    <div>
+      <a href="#section-1" class="btn-floating">
+        <p class="fas fa-arrow-up">^</p>
+      </a>
+    </div>
+  </body>
+  <script>
+    // auto slide show
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 3000);
+    }
+  </script>
+</html>
